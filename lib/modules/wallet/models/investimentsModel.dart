@@ -11,10 +11,20 @@ class InvestimentsModel {
   List<EvolutionPatrimony> evolutionPatrimony;
   List<ProfitabilityWallet> profitabilityWallet;
 
-  InvestimentsModel() {
+  InvestimentsModel(
+      {this.availableToInvest,
+      this.toSettle,
+      this.walletInvestiments,
+      this.consolidatedPosition,
+      this.evolutionPatrimony,
+      this.profitabilityWallet}) {
     walletInvestiments = new List<WalletInvestiments>();
     consolidatedPosition = new List<ConsolidatedPosition>();
     evolutionPatrimony = new List<EvolutionPatrimony>();
     profitabilityWallet = new List<ProfitabilityWallet>();
+  }
+
+  factory InvestimentsModel.getDataMock() {
+    return InvestimentsModel(availableToInvest: 1000.0, toSettle: 100.0);
   }
 }
