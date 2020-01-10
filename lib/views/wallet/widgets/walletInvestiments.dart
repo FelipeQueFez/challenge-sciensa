@@ -1,13 +1,17 @@
 import 'package:challengesciensa/appConfig.dart';
-import 'package:challengesciensa/themes/colors.dart';
 import 'package:flutter/material.dart';
 
-class CardMin extends StatelessWidget {
-  final String title;
-  final double value;
+class WalletInvestiments extends StatefulWidget {
 
-  CardMin({this.title, this.value});
+  final List<WalletInvestiments> walletInvestiments;
 
+  WalletInvestiments({@required this.walletInvestiments});
+
+  @override
+  _WalletInvestimentsState createState() => _WalletInvestimentsState();
+}
+
+class _WalletInvestimentsState extends State<WalletInvestiments> {
   @override
   Widget build(BuildContext context) {
     var _ac = AppConfig(context);
@@ -17,10 +21,10 @@ class CardMin extends StatelessWidget {
       height: _ac.rH(10),
       margin: EdgeInsets.fromLTRB(15, _ac.rH(2), 15, _ac.rH(0)),
       decoration: BoxDecoration(
-        color: colorGrey,
+        color: Colors.transparent,
         borderRadius: new BorderRadius.all(new Radius.circular(10.0)),
       ),
-      child: Text(title),
+      child: Text("teste"),
     );
   }
 }

@@ -4,7 +4,7 @@ import 'package:challengesciensa/views/shared/defaultStates/LoadingWidget.dart';
 import 'package:challengesciensa/views/shared/states/DefaultState.dart';
 import 'package:challengesciensa/views/wallet/bloc/walletBloc.dart';
 import 'package:challengesciensa/views/wallet/bloc/walletState.dart';
-import 'package:challengesciensa/views/wallet/widgets/cardTop.dart';
+import 'package:challengesciensa/views/wallet/widgets/cardHeader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -36,7 +36,7 @@ class _WalletModuleState extends State<WalletModule> {
         }
 
         if (state is WalletLoaded) {
-          return CardTop(model: state.investiments);
+          return CardHeader(model: state.investiments);
         }
 
         return Center(child: CircularProgressIndicator());
