@@ -1,6 +1,6 @@
 import 'package:challengesciensa/modules/wallet/enums/typeInvestimentEnum.dart';
 
-class EvolutionPatrimony {
+class EvolutionPatrimonyModel {
   double value;
   double percentage;
   TypeInvestiment typeInvestiment;

@@ -1,6 +1,6 @@
 import 'package:challengesciensa/modules/wallet/enums/typeInvestimentEnum.dart';
 
-class WalletInvestiments {
+class WalletInvestimentsModel {
   TypeInvestiment typeInvestiment;
   int quantity;
   double percentage;

@@ -1,9 +1,10 @@
 import 'package:challengesciensa/appConfig.dart';
+import 'package:challengesciensa/modules/wallet/models/walletInvestimentsModel.dart';
 import 'package:flutter/material.dart';
 
 class WalletInvestiments extends StatefulWidget {
 
-  final List<WalletInvestiments> walletInvestiments;
+  final List<WalletInvestimentsModel> walletInvestiments;
 
   WalletInvestiments({@required this.walletInvestiments});
 

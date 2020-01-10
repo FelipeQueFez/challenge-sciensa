@@ -1,15 +1,15 @@
-import 'package:challengesciensa/modules/wallet/models/consolidatedPosition.dart';
-import 'package:challengesciensa/modules/wallet/models/evolutionPatrimony.dart';
-import 'package:challengesciensa/modules/wallet/models/profitabilityWallet.dart';
-import 'package:challengesciensa/modules/wallet/models/walletInvestiments.dart';
+import 'package:challengesciensa/modules/wallet/models/consolidatedPositionModel.dart';
+import 'package:challengesciensa/modules/wallet/models/evolutionPatrimonyModel.dart';
+import 'package:challengesciensa/modules/wallet/models/profitabilityWalletModel.dart';
+import 'package:challengesciensa/modules/wallet/models/walletInvestimentsModel.dart';
 
 class InvestimentsModel {
   double availableToInvest;
   double toSettle;
-  List<WalletInvestiments> walletInvestiments;
-  List<ConsolidatedPosition> consolidatedPosition;
-  List<EvolutionPatrimony> evolutionPatrimony;
-  List<ProfitabilityWallet> profitabilityWallet;
+  List<WalletInvestimentsModel> walletInvestiments;
+  List<ConsolidatedPositionModel> consolidatedPosition;
+  List<EvolutionPatrimonyModel> evolutionPatrimony;
+  List<ProfitabilityWalletModel> profitabilityWallet;
 
   InvestimentsModel(
       {this.availableToInvest,
@@ -18,10 +18,10 @@ class InvestimentsModel {
       this.consolidatedPosition,
       this.evolutionPatrimony,
       this.profitabilityWallet}) {
-    walletInvestiments = new List<WalletInvestiments>();
-    consolidatedPosition = new List<ConsolidatedPosition>();
-    evolutionPatrimony = new List<EvolutionPatrimony>();
-    profitabilityWallet = new List<ProfitabilityWallet>();
+    walletInvestiments = new List<WalletInvestimentsModel>();
+    consolidatedPosition = new List<ConsolidatedPositionModel>();
+    evolutionPatrimony = new List<EvolutionPatrimonyModel>();
+    profitabilityWallet = new List<ProfitabilityWalletModel>();
   }
 
   factory InvestimentsModel.getDataMock() {
