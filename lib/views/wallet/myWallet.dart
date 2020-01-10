@@ -1,4 +1,8 @@
+import 'package:challengesciensa/views/wallet/bloc/walletBloc.dart';
+import 'package:challengesciensa/views/wallet/bloc/walletEvent.dart';
+import 'package:challengesciensa/views/wallet/myWalletModule.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MyWallet extends StatefulWidget {
   @override
@@ -10,6 +14,7 @@ class MyWallet extends StatefulWidget {
 }
 
 class _MyWalletState extends State<MyWallet> {
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -33,6 +38,10 @@ class _MyWalletState extends State<MyWallet> {
                 ),
               ],
             ),
+            body: BlocProvider<WalletBloc>(
+              builder: (context) => WalletBloc()..dispatch(WalletLoad()),
+              child: WalletModule(walletBloc: new WalletBloc())
+            )
           )),
     ));
   }
