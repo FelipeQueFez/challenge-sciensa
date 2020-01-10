@@ -19,10 +19,7 @@ class _MyWalletState extends State<MyWallet> {
           top: false,
           child: Scaffold(
             appBar: AppBar(
-              backgroundColor: Color(0xFF28388F),
-              elevation: 0,
-              iconTheme: IconThemeData(color: Colors.black),
-              title: Text(widget.text, style: TextStyle(color: Colors.white, fontSize: 18)),
+              title: Text(widget.text),
               actions: <Widget>[
                 SizedBox(
                   width: 48,
