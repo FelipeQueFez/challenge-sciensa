@@ -19,6 +19,10 @@ class _MyWalletState extends State<MyWallet> {
           top: false,
           child: Scaffold(
             appBar: AppBar(
+              leading: IconButton(
+                icon: Icon(Icons.arrow_back, size: 25),
+                onPressed: () {},
+              ),
               title: Text(widget.text),
               actions: <Widget>[
                 SizedBox(
