@@ -1,8 +1,7 @@
+import 'package:challengesciensa/themes/colors.dart';
 import 'package:challengesciensa/views/wallet/resources/walletInvestimentsResource.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-
-import 'indicator.dart';
 
 class PieChartSample2 extends StatefulWidget {
   @override
@@ -56,33 +55,33 @@ class PieChart2State extends State {
       switch (i) {
         case 0:
           return PieChartSectionData(
-            color: const Color(0xff28388F),
+            color: colorPrevidencia,
             value: 20,
             title: '',
             radius: radius,
           );
         case 1:
           return PieChartSectionData(
-            color: const Color(0xffFF9800),
+            color: colorAcoesFuturo,
             value: 25,
             title: '',
             radius: radius,
           );
         case 2:
           return PieChartSectionData(
-              color: const Color(0xffAD1457),
+              color: colorTesouro,
               value: 10,
               title: '',
               radius: radius);
         case 3:
           return PieChartSectionData(
-              color: const Color(0xff179016),
+              color: colorRendaFixa,
               value: 15,
               title: '',
               radius: radius);
         case 4:
           return PieChartSectionData(
-              color: const Color(0xff00BDC4),
+              color: colorFundos,
               value: 20,
               title: '',
               radius: radius);

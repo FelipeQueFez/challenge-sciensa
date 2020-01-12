@@ -1,3 +1,4 @@
+import 'package:challengesciensa/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 class Indicator extends StatelessWidget {
@@ -13,7 +14,7 @@ class Indicator extends StatelessWidget {
     this.text,
     this.subText,
     this.size = 8,
-    this.textColor = const Color(0xff000000),
+    this.textColor = colorTitleIndicator,
   }) : super(key: key);
 
   @override
@@ -42,7 +43,7 @@ class Indicator extends StatelessWidget {
             Text(
               subText,
               style: TextStyle(
-                  fontSize: 14, fontWeight: FontWeight.w300, color: Color(0xff444444)),
+                  fontSize: 14, fontWeight: FontWeight.w300, color: colorSubTitleIndicator),
             ),
           ],
         ));

@@ -1,5 +1,6 @@
 import 'package:challengesciensa/appConfig.dart';
 import 'package:challengesciensa/modules/wallet/models/walletInvestimentsModel.dart';
+import 'package:challengesciensa/themes/colors.dart';
 import 'package:challengesciensa/views/wallet/resources/walletInvestimentsResource.dart';
 import 'package:challengesciensa/views/wallet/widgets/charts/indicator.dart';
 import 'package:challengesciensa/views/wallet/widgets/charts/pieChart.dart';
@@ -38,33 +39,33 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
                     style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 13,
-                        color: Color(0xFF5A5A5A))))),
+                        color: colorCardTitle)))),
         Card(
-          color: Color(0xFFFFFFFF),
+          color: colorCard,
           child: Column(children: <Widget>[
             PieChartSample2(),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
-                color: Color(0xff179016),
+                color: colorRendaFixa,
                 text: 'Renda Fixa',
                 subText: '10% | 5 ativos',
               ),
               Indicator(
-                color: Color(0xff00BDC4),
+                color: colorFundos,
                 text: 'Fundos',
                 subText: '10% | 5 ativos',
               ),
-              Indicator(color: Color(0xff28388F), text: 'Previdência', subText: '10% | 5 ativos',),
+              Indicator(color: colorPrevidencia, text: 'Previdência', subText: '10% | 5 ativos',),
             ]),
             SizedBox(height: 20, child: Container()),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
-                color: Color(0xffFF9800),
+                color: colorAcoesFuturo,
                 text: 'Ações/Futuro',
                 subText: '10% | 5 ativos',
               ),
               Indicator(
-                color: Color(0xffAD1457),
+                color: colorTesouro,
                 text: 'Tesouro',
                 subText: '10% | 2 ativos',
               ),

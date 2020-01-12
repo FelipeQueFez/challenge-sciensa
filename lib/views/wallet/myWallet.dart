@@ -1,3 +1,4 @@
+import 'package:challengesciensa/themes/colors.dart';
 import 'package:challengesciensa/views/wallet/bloc/walletBloc.dart';
 import 'package:challengesciensa/views/wallet/bloc/walletEvent.dart';
 import 'package:challengesciensa/views/wallet/myWalletModule.dart';
@@ -23,7 +24,7 @@ class _MyWalletState extends State<MyWallet> {
           bottom: false,
           top: false,
           child: Scaffold(
-            backgroundColor: Color(0xFFE5E5E5),
+            backgroundColor: backgroundColorPage,
             appBar: AppBar(
               leading: IconButton(
                 icon: Icon(Icons.arrow_back, size: 25),
