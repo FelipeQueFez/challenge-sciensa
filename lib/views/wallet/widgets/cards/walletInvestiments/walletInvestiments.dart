@@ -24,8 +24,7 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
 
     return Container(
       width: _ac.rW(100),
-      height: _ac.rH(70),
-      margin: EdgeInsets.fromLTRB(15, _ac.rH(2), 15, _ac.rH(0)),
+      margin: EdgeInsets.fromLTRB(15, _ac.rH(4), 15, _ac.rH(0)),
       decoration: BoxDecoration(
         color: Colors.transparent,
         borderRadius: new BorderRadius.all(new Radius.circular(10.0)),
