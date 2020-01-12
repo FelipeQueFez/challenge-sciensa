@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Indicator extends StatelessWidget {
   final Color color;
   final String text;
+  final String subText;
   final double size;
   final Color textColor;
 
@@ -10,15 +11,16 @@ class Indicator extends StatelessWidget {
     Key key,
     this.color,
     this.text,
-    this.size = 16,
-    this.textColor = const Color(0xff505050),
+    this.subText,
+    this.size = 8,
+    this.textColor = const Color(0xff000000),
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
         margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
-        child: Row(
+        child: Column(
           children: <Widget>[
             Container(
               width: size,
@@ -30,12 +32,18 @@ class Indicator extends StatelessWidget {
             ),
             const SizedBox(
               width: 4,
+              height: 5,
             ),
             Text(
               text,
               style: TextStyle(
-                  fontSize: 16, fontWeight: FontWeight.bold, color: textColor),
-            )
+                  fontSize: 14, fontWeight: FontWeight.normal, color: textColor),
+            ),
+            Text(
+              subText,
+              style: TextStyle(
+                  fontSize: 14, fontWeight: FontWeight.w300, color: Color(0xff444444)),
+            ),
           ],
         ));
   }

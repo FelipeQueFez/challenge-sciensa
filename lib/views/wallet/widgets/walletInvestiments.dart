@@ -45,24 +45,28 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
             PieChartSample2(),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
-                color: Color(0xff0293ee),
-                text: 'First',
+                color: Color(0xff179016),
+                text: 'Renda Fixa',
+                subText: '10% | 5 ativos',
               ),
               Indicator(
-                color: Color(0xfff8b250),
-                text: 'Second',
+                color: Color(0xff00BDC4),
+                text: 'Fundos',
+                subText: '10% | 5 ativos',
               ),
-              Indicator(color: Color(0xff845bef), text: 'Third'),
+              Indicator(color: Color(0xff28388F), text: 'Previdência', subText: '10% | 5 ativos',),
             ]),
             SizedBox(height: 20, child: Container()),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
-                color: Color(0xff13d38e),
-                text: 'Fourth',
+                color: Color(0xffFF9800),
+                text: 'Ações/Futuro',
+                subText: '10% | 5 ativos',
               ),
               Indicator(
-                color: Color(0xff13d38e),
-                text: 'Five',
+                color: Color(0xffAD1457),
+                text: 'Tesouro',
+                subText: '10% | 2 ativos',
               ),
             ]),
             SizedBox(height: 20, child: Container()),
