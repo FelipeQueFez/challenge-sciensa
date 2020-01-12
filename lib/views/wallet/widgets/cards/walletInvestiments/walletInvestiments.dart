@@ -47,12 +47,12 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
                 color: colorRendaFixa,
-                text: 'Renda Fixa',
+                text: _resource.rendaFixa,
                 subText: '10% | 5 ativos',
               ),
               Indicator(
                 color: colorFundos,
-                text: 'Fundos',
+                text: _resource.fundos,
                 subText: '10% | 5 ativos',
               ),
               Indicator(color: colorPrevidencia, text: 'Previdência', subText: '10% | 5 ativos',),
@@ -61,12 +61,12 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
                 color: colorAcoesFuturo,
-                text: 'Ações/Futuro',
+                text: _resource.acoesFuturo,
                 subText: '10% | 5 ativos',
               ),
               Indicator(
                 color: colorTesouro,
-                text: 'Tesouro',
+                text: _resource.tesouro,
                 subText: '10% | 2 ativos',
               ),
             ]),
