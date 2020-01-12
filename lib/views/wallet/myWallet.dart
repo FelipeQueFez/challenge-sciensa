@@ -23,6 +23,7 @@ class _MyWalletState extends State<MyWallet> {
           bottom: false,
           top: false,
           child: Scaffold(
+            backgroundColor: Color(0xFFE5E5E5),
             appBar: AppBar(
               leading: IconButton(
                 icon: Icon(Icons.arrow_back, size: 25),
