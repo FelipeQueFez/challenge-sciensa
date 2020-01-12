@@ -1,9 +1,9 @@
 import 'package:challengesciensa/appConfig.dart';
 import 'package:challengesciensa/modules/wallet/models/walletInvestimentsModel.dart';
+import 'package:challengesciensa/views/wallet/widgets/charts/pieChart.dart';
 import 'package:flutter/material.dart';
 
 class WalletInvestiments extends StatefulWidget {
-
   final List<WalletInvestimentsModel> walletInvestiments;
 
   WalletInvestiments({@required this.walletInvestiments});
@@ -25,7 +25,14 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
         color: Colors.transparent,
         borderRadius: new BorderRadius.all(new Radius.circular(10.0)),
       ),
-      child: Text("teste"),
+      child: Column(children: <Widget>[
+        Text("CARTEIRA DE INVESTIMENTOS",
+            style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 13,
+                color: Color(0xFF5A5A5A))),
+        PieChartSample2()
+      ]),
     );
   }
 }
