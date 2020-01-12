@@ -1,6 +1,7 @@
 import 'package:challengesciensa/appConfig.dart';
 import 'package:challengesciensa/modules/wallet/models/walletInvestimentsModel.dart';
 import 'package:challengesciensa/views/wallet/resources/walletInvestimentsResource.dart';
+import 'package:challengesciensa/views/wallet/widgets/charts/indicator.dart';
 import 'package:challengesciensa/views/wallet/widgets/charts/pieChart.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,6 @@ class WalletInvestiments extends StatefulWidget {
 }
 
 class _WalletInvestimentsState extends State<WalletInvestiments> {
-
   var _resource = new WalletInvestimentsResource();
 
   @override
@@ -41,7 +41,32 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
                         color: Color(0xFF5A5A5A))))),
         Card(
           color: Color(0xFFFFFFFF),
-          child: PieChartSample2(),
+          child: Column(children: <Widget>[
+            PieChartSample2(),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              Indicator(
+                color: Color(0xff0293ee),
+                text: 'First',
+              ),
+              Indicator(
+                color: Color(0xfff8b250),
+                text: 'Second',
+              ),
+              Indicator(color: Color(0xff845bef), text: 'Third'),
+            ]),
+            SizedBox(height: 20, child: Container()),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              Indicator(
+                color: Color(0xff13d38e),
+                text: 'Fourth',
+              ),
+              Indicator(
+                color: Color(0xff13d38e),
+                text: 'Five',
+              ),
+            ]),
+            SizedBox(height: 20, child: Container()),
+          ]),
           margin: EdgeInsets.only(top: 20),
         )
       ]),

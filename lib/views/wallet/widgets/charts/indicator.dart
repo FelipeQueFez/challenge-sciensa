@@ -16,25 +16,27 @@ class Indicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Container(
-          width: size,
-          height: size,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: color,
-          ),
-        ),
-        const SizedBox(
-          width: 4,
-        ),
-        Text(
-          text,
-          style: TextStyle(
-              fontSize: 16, fontWeight: FontWeight.bold, color: textColor),
-        )
-      ],
-    );
+    return Container(
+        margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
+        child: Row(
+          children: <Widget>[
+            Container(
+              width: size,
+              height: size,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: color,
+              ),
+            ),
+            const SizedBox(
+              width: 4,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                  fontSize: 16, fontWeight: FontWeight.bold, color: textColor),
+            )
+          ],
+        ));
   }
 }
