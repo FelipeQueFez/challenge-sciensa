@@ -2,8 +2,8 @@ import 'package:challengesciensa/appConfig.dart';
 import 'package:challengesciensa/modules/wallet/models/walletInvestimentsModel.dart';
 import 'package:challengesciensa/themes/colors.dart';
 import 'package:challengesciensa/views/wallet/resources/walletInvestimentsResource.dart';
-import 'package:challengesciensa/views/wallet/widgets/charts/indicator.dart';
-import 'package:challengesciensa/views/wallet/widgets/charts/pieChart.dart';
+import 'package:challengesciensa/views/wallet/widgets/cards/walletInvestiments/charts/indicator.dart';
+import 'package:challengesciensa/views/wallet/widgets/cards/walletInvestiments/charts/pieChart.dart';
 import 'package:flutter/material.dart';
 
 class WalletInvestiments extends StatefulWidget {
@@ -43,7 +43,7 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
         Card(
           color: colorCard,
           child: Column(children: <Widget>[
-            PieChartSample2(),
+            PieChartCustom(),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
               Indicator(
                 color: colorRendaFixa,

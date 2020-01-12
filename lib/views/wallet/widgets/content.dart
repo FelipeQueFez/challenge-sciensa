@@ -1,7 +1,7 @@
 import 'package:challengesciensa/modules/wallet/models/investimentsModel.dart';
 import 'package:challengesciensa/views/wallet/resources/cardTopResource.dart';
-import 'package:challengesciensa/views/wallet/widgets/cardHeaderItem.dart';
-import 'package:challengesciensa/views/wallet/widgets/walletInvestiments.dart';
+import 'package:challengesciensa/views/wallet/widgets/cards/header/cardHeaderItem.dart';
+import 'package:challengesciensa/views/wallet/widgets/cards/walletInvestiments/walletInvestiments.dart';
 import 'package:flutter/material.dart';
 
 class Content extends StatefulWidget {

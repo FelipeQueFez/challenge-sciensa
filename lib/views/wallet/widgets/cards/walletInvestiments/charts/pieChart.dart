@@ -3,12 +3,12 @@ import 'package:challengesciensa/views/wallet/resources/walletInvestimentsResour
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class PieChartSample2 extends StatefulWidget {
+class PieChartCustom extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => PieChart2State();
+  State<StatefulWidget> createState() => PieChartCustomState();
 }
 
-class PieChart2State extends State {
+class PieChartCustomState extends State {
   var _resource = new WalletInvestimentsResource();
 
   @override
