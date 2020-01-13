@@ -61,7 +61,6 @@ class _LineChartCustomState extends State<LineChartCustom> {
               fontWeight: FontWeight.bold,
               fontSize: 12),
           getTitles: (value) {
-            print(value);
             switch (value.toInt()) {
               case 0:
                 return 'AGO';
