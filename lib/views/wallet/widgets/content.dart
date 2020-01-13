@@ -2,6 +2,7 @@ import 'package:challengesciensa/modules/wallet/models/investimentsModel.dart';
 import 'package:challengesciensa/views/wallet/resources/cardTopResource.dart';
 import 'package:challengesciensa/views/wallet/widgets/cards/consolidatedPosition/consolidatedPosition.dart';
 import 'package:challengesciensa/views/wallet/widgets/cards/header/cardHeaderItem.dart';
+import 'package:challengesciensa/views/wallet/widgets/cards/profitabilityWallet/profitabilityWallet.dart';
 import 'package:challengesciensa/views/wallet/widgets/cards/walletInvestiments/walletInvestiments.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,8 @@ class _ContentState extends State<Content> {
       CardHeaderItem(title: resource.availableToInvest, value: widget.model.availableToInvest),
       CardHeaderItem(title: resource.toSettle, value: widget.model.toSettle),
       WalletInvestiments(walletInvestiments: widget.model.walletInvestiments),
-      ConsolidatedPosition(consolidatedPosition: widget.model.consolidatedPosition)
+      ConsolidatedPosition(consolidatedPosition: widget.model.consolidatedPosition),
+      ProfitabilityWallet(profitabilityWallet: widget.model.profitabilityWallet)
     ]);
   }
 }
