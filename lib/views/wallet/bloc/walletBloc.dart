@@ -15,6 +15,9 @@ class WalletBloc extends Bloc<WalletEvent, DefaultState> {
       case WalletLoad:
         yield Loading();
 
+        //TODO:only for demonstration
+        await Future.delayed(const Duration(seconds: 3), () => "1");
+
         yield WalletLoaded(investiments: InvestimentsModel.getDataMock());
         
         break;
