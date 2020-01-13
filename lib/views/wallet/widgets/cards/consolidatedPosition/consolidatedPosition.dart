@@ -35,11 +35,11 @@ class _ConsolidatedPositionState extends State<ConsolidatedPosition> {
                           color: colorCardTitle)))),
           Column(
             children: <Widget>[
-            ConsolidatedPositionItem(ac: _ac, colorBar: colorFundos, descriptionInvestiment: "Fundos de Investimentos", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
-            ConsolidatedPositionItem(ac: _ac, colorBar: colorAcoesFuturo, descriptionInvestiment: "Ações e Futuro", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
-            ConsolidatedPositionItem(ac: _ac, colorBar: colorTesouro, descriptionInvestiment: "Tesouro Direto", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
-            ConsolidatedPositionItem(ac: _ac, colorBar: colorRendaFixa, descriptionInvestiment: "Rende Fixa", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
-            ConsolidatedPositionItem(ac: _ac, colorBar: colorPrevidencia, descriptionInvestiment: "Previdência Privada", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
+            ConsolidatedPositionItem(ac: _ac, colorBar: colorFundos, colorLine: Color(0xffF7F9FC), descriptionInvestiment: "Fundos de Investimentos", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
+            ConsolidatedPositionItem(ac: _ac, colorBar: colorAcoesFuturo, colorLine: Color(0xffFFFFFF), descriptionInvestiment: "Ações e Futuro", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
+            ConsolidatedPositionItem(ac: _ac, colorBar: colorTesouro, colorLine: Color(0xffF7F9FC), descriptionInvestiment: "Tesouro Direto", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
+            ConsolidatedPositionItem(ac: _ac, colorBar: colorRendaFixa, colorLine: Color(0xffFFFFFF), descriptionInvestiment: "Rende Fixa", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
+            ConsolidatedPositionItem(ac: _ac, colorBar: colorPrevidencia, colorLine: Color(0xffF7F9FC), descriptionInvestiment: "Previdência Privada", quantityActive: "5 ativos", grossBalance: "R\$ 3.860.941,34"),
           ])
         ]));
   }

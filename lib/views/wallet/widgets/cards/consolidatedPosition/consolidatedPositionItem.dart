@@ -7,6 +7,7 @@ class ConsolidatedPositionItem extends StatelessWidget {
     Key key,
     @required this.ac,
     @required this.colorBar,
+    @required this.colorLine,
     @required this.descriptionInvestiment,
     @required this.quantityActive,
     @required this.grossBalance,
@@ -14,6 +15,7 @@ class ConsolidatedPositionItem extends StatelessWidget {
 
   final AppConfig ac;
   final Color colorBar;
+  final Color colorLine;
   final String descriptionInvestiment;
   final String quantityActive;
   final String grossBalance;
@@ -22,7 +24,7 @@ class ConsolidatedPositionItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: ac.rH(10),
-        color: Color(0xffF7F9FC),
+        color: colorLine,
         child: Row(children: <Widget>[
           SizedBox(
               width: 5,
