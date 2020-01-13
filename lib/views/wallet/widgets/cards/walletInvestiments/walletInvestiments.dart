@@ -23,12 +23,7 @@ class _WalletInvestimentsState extends State<WalletInvestiments> {
     var _ac = AppConfig(context);
 
     return Container(
-      width: _ac.rW(100),
       margin: EdgeInsets.fromLTRB(15, _ac.rH(4), 15, _ac.rH(0)),
-      decoration: BoxDecoration(
-        color: Colors.transparent,
-        borderRadius: new BorderRadius.all(new Radius.circular(10.0)),
-      ),
       child: Column(children: <Widget>[
         Container(
             margin: EdgeInsets.only(top: 10),
