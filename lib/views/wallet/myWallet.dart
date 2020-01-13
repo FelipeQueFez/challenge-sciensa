@@ -15,7 +15,6 @@ class MyWallet extends StatefulWidget {
 }
 
 class _MyWalletState extends State<MyWallet> {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,27 +23,23 @@ class _MyWalletState extends State<MyWallet> {
           bottom: false,
           top: false,
           child: Scaffold(
-            backgroundColor: backgroundColorPage,
-            appBar: AppBar(
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back, size: 25),
-                onPressed: () {},
-              ),
-              title: Text(widget.text),
-              actions: <Widget>[
-                SizedBox(
-                  width: 48,
-                  height: 48,
-                  child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/foto.png')),
+              backgroundColor: backgroundColorPage,
+              appBar: AppBar(
+                leading: IconButton(
+                  icon: Icon(Icons.arrow_back, size: 25),
+                  onPressed: () {},
                 ),
-              ],
-            ),
-            body: BlocProvider<WalletBloc>(
-              builder: (context) => WalletBloc()..dispatch(WalletLoad()),
-              child: WalletModule(walletBloc: new WalletBloc())
-            )
-          )),
+                title: Text(widget.text),
+                actions: <Widget>[
+                  CircleAvatar(
+                      radius: 42,
+                      backgroundColor: Colors.transparent,
+                      backgroundImage: AssetImage('assets/images/foto.png'))
+                ],
+              ),
+              body: BlocProvider<WalletBloc>(
+                  builder: (context) => WalletBloc()..dispatch(WalletLoad()),
+                  child: WalletModule(walletBloc: new WalletBloc())))),
     ));
   }
 }
