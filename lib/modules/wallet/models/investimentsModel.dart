@@ -25,6 +25,6 @@ class InvestimentsModel {
   }
 
   factory InvestimentsModel.getDataMock() {
-    return InvestimentsModel(availableToInvest: 1000.0, toSettle: 100.0);
+    return InvestimentsModel(availableToInvest: 1000.0, toSettle: 150.0);
   }
 }
